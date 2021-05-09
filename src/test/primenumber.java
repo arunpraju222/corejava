@@ -4,13 +4,15 @@ import java.util.Scanner;
 
 public class primenumber {
 
+	private static Scanner scanner;
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		 int temp;
 	        boolean isPrime=true;
 	        
-	 Scanner scanner = new Scanner(System.in);
+	 scanner = new Scanner(System.in);
 	        
 	        System.out.println("Enter the number : ");
 	        int num = scanner.nextInt();
