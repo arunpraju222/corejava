@@ -1,6 +1,6 @@
 package Ecommerce1;
 
-import java.math.BigDecimal;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -37,7 +37,7 @@ public class Login {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/ecommerce","root","root");
-			//Connection con=DriverManager.getConnection("jdbc:mysql://3.95.238.133:3306/ecommerce","root","root");
+			
 			Statement stmn=con.createStatement();
 			ResultSet rs=stmn.executeQuery("select * from Amazon");
 			while(rs.next()){
